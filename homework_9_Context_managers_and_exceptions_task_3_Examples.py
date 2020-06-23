@@ -1,78 +1,98 @@
 """
-Задание 2
-
-Реализовать контекстный менеджер, выводящий в файл следующую информацию:
-дата
-время выполнения кода
-информация о возникшей ошибке (в коде, обернутом контекстным менеджером).
-Файл указать при конструировании менеджера.
-Файл открывается в режиме append, чтобы при вызове менеджера с одним и тем же файлом информация дописывалась (такой самописный лог).
-Выше ошибка прокидывается (происходит reraise).
-Используйте ContextDecorator для решения.
-
-Если менеджер наследуется от ContextDecorator, его можно использовать как декоратор
+Задание 3*
+Пересмотрите задания, которые вы выполняли ранее в курсе,
+свои пет-проекты, курсовые и т.п.
+Найдите фрагменты, которые вы бы теперь переписали с
+использованием менеджеров контекста (если раньше их не использовали)?
+Переписывать код не нужно, достаточно объяснить преподавателю,
+почему контекстные менеджеры здесь - то, что нужно.
+Если вы и раньше использовали их в своем коде, тоже покажите!
 """
 
-import contextlib
-import time
-from datetime import datetime
+"""
+Использование менеджера контекста делает код более безопасным,
+тем что он сам удаляет объекты при выходе из контекста,
+исключая человеческий фактор.
+Например, вам может потребоваться открыть файл, вписать в него
+кучу всего и закрыть. Это классический пример работы
+контекстного менеджера.
 
-FILE_NAME = "example_log.txt"
+Например:
+
+f_obj = open(path, 'w')
+f_obj.write(some_data)
+f_obj.close()
 
 
-class MyContextDecorator(contextlib.ContextDecorator):
-    """
-    A context manager that outputs the following information to a file:
-    date, code execution time,  information about the error that occurred.
-    """
+Но что то может пойти не так во время выполнения.
+Поэтому нужно использовать менеджер контекста:
 
-    def __init__(self, file_name):
-        self.file_name = file_name
-        self.start_time = time.time()
 
+with open(path, 'w') as f_obj:
+    f_obj.write(some_data)
+
+
+При создании менеджеров контекста с использованием
+классов пользователь должен убедиться, что у класса
+есть методы: __enter __ () и __exit __ () .
+__Enter __ () возвращает ресурс, которым нужно управлять,
+а __exit __ () ничего не возвращает, но выполняет операции очистки.
+
+
+"""
+class MyClass:
     def __enter__(self):
-        with open(self.file_name, "a+") as f:
-            f.write(f"[Info] {datetime.now()}: Start execution code.\n")
+        # Некий инициализирующий код
+        return self
 
-    def __exit__(self, exc_type, exc_value, traceback):
-        with open(self.file_name, "a+") as f:
-            result = "Successful"
-            if exc_value:
-                result = exc_value
-            f.write(
-                f"[Info] {datetime.now()}: Code execution time: {time.time() - self.start_time}. Result execution: {result}.\n"
-            )
-
-
-def divide(dividend, divider):
-    """
-    Number division function
-
-    :param dividend: Number dividend
-    :param divider: Number divider
-    :return:
-    """
-    try:
-        quotient = dividend / divider
-        return f"{dividend} is divisible by {divider}, the result is {int(quotient)}"
-    except Exception as e:
-        raise (Exception(f"Error code: {e}"))
-
-
-if __name__ == "__main__":
-    with MyContextDecorator(FILE_NAME):
-        print(divide(4, 2))
-
-    with MyContextDecorator(FILE_NAME):
-        print(divide(4, 0))
-
+    def __exit__(self, *args, **kwargs):
+        pass
 """
-РЕЗУЛЬТАТ ВЫПОЛНЕНИЯ ПРОГРАММЫ.
-Содержимое файла "example_log.txt":
 
-[Info] 2020-06-17 17:17:52.850471: Start execution code.
-[Info] 2020-06-17 17:17:52.852471: Code execution time: 0.003001689910888672. Result execution: Successful.
-[Info] 2020-06-17 17:17:52.855470: Start execution code.
-[Info] 2020-06-17 17:17:52.857471: Code execution time: 0.0039997100830078125. Result execution: Error code: division by zero.
+ Некий зачищающий код
+
+ Теперь можно писать так
+with MyClass() as obj:  # Вызывает MyClass.__enter__()
+ Контекст где obj существует
+ Действия с объектом
+
+ Выход из контекста. Вызывает MyClass.__exit__()
+ obj был удалён автоматом
+
+
+Мы можем использовать его в следующих случаях:
+
+- Управление файлами, помогает в управлении файловыми ресурсами.
+  Открытие файла, записи/чтении содержимого и последующем его закрытии.
+
+- Управление подключением к базе данных и транзакциями
+
+- Установка соединения с ресурсами
+
+- Обёртка соединений по протоколу
+
+- Использование в автоматизации тестирования, в автоматических
+  тестах. 
+  - Проверка на возникновение исключения при тестировании.
+  - Настройка mocks перед тестированием
+  - Настройка среды выполнения Python
+  - Автоматизация задач администрирования
+
+- Для захвата и освобождения ресурсов. 
+
+- Синхронизация доступа к общим ресурсам.
+
+- Убедиться, что открытый поток закрывается
+
+- Полезны для унификации общего кода настройки и разрыва или любой
+  пары операций, которые необходимо выполнить до или после действия.
+
+- Управление пулом процессов
+
+- Тайминги выполнения кода
+
+- Работа с временными файлами
+
+- Перенаправление потоков ввода и вывода
 
 """

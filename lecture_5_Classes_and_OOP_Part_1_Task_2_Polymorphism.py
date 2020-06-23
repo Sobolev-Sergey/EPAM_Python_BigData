@@ -19,4 +19,32 @@ In:  Counter([1, 2, 3]) + "mississippi"
 Out: ["1 mississippi", "2 mississippi" , "3 mississippi"]
 """
 
+from typing import List
 
+
+class Counter:
+    def __init__(self, values: List[int]):
+        self.values = values
+
+    def __add__(self, string):
+        result = []
+        for i in self.values:
+            new_string = f"{i} {string}"
+            result.append(new_string)
+        return result
+
+
+print(Counter([1, 2, 3]) + "mississippi")
+
+"""
+from typing import List
+
+class Counter:
+    def __init__(self, values: List[int]):
+        self.values = values
+
+    def __add__(self, other: str):
+        return [f"{value} {other}" for value in self.values]
+
+print(Counter([1, 2, 3]) + "mississippi")
+"""

@@ -24,8 +24,7 @@
 Изначально у каждого героя произвольный уровень от 0 до 1.
 У солдат уровня нет.
 
-Для команды с героем максимального уровня создайте разведывательный отряд из героя и 3х произвольных солдат его команды,
-которые следуют за ним.
+Для команды с героем максимального уровня создайте разведывательный отряд из героя и 3х произвольных солдат его команды, которые следуют за ним.
 Выведите на экран состав участников отряда.
 
   >> Scout: Soldier(idx=56, color=yellow, hero=Hero(idx=1, color=yellow, level=2))
@@ -41,23 +40,7 @@
 Для базовой проверки и форматирования кода используйте: isort, black, pylint.
 ДЗ нужно выполнить до следующей лекции.
 
-
->> Scout: Soldier(idx=56, color=yellow, hero=Hero(idx=1, color=yellow, level=2))
->> Scout: Soldier(idx=505, color=yellow, hero=Hero(idx=1, color=yellow, level=2))
->> Scout: Soldier(idx=770, color=yellow, hero=Hero(idx=1, color=yellow, level=2))
->> Scout: Hero(idx=1, color=yellow, level=2)
-
 """
-
-# class Warrior
-#
-#
-# def main():
-#     """main logic"""
-#     pass
-#
-# # run
-# main()
 
 from random import randint, choice
 
@@ -187,6 +170,20 @@ def main():
     for scout in scouts:
         print(f"Scout: {scout.__repr__()}")
 
+
 main()
 
 
+"""
+Output run:
+
+Team 'red' has '315' soldiers.
+Team 'yellow' has '352' soldiers.
+Team 'green' has '333' soldiers.
+Team 'yellow' has more soldiers than others
+Scout: Soldier(idx=625, color=yellow, hero=Hero(idx=2, color=yellow, level=2))
+Scout: Soldier(idx=41, color=yellow, hero=Hero(idx=2, color=yellow, level=2))
+Scout: Soldier(idx=875, color=yellow, hero=Hero(idx=2, color=yellow, level=2))
+Scout: Hero(idx=2, color=yellow, level=2)
+
+"""

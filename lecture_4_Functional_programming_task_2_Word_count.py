@@ -1,36 +1,37 @@
 """
-Преобразовать код в императивном стиле
-
-names = ['Alexey', 'Ivan', 'Petr']​
+sentences = ['test string',​
+             'with two test words: test and test',​
+             'and some without ** string']​
 ​
-for i in range(len(names)):​
-    names[i] = hash(names[i])​
-​
-print(names)​
+count = 0​
+for sentence in sentences:​
+    count += sentence.count('test')
 
-в функциональный.
-функция hash_names на вход принимает список строк, на выход - список интов.
 
-Не забываем про документацию!
+Написать в функциональном стиле функцию, которая на вход получает
+список строк и слово.
+Нужно вернуть количество вхождений этого слова в переданных строках.
 """
 
 from typing import List
 
 
-def hash_names(names: List[str]) -> List[int]:
+def count_words(sentences: List[str], word: str) -> int:
     """
-    Accepts a list of lines as input, as a list of int as output.
+    The number of occurrences of this word in the transmitted lines
 
-    :param names: list of lines
-    :return: hash lines in int
+    :param sentences: list of lines
+    :param word: occurrences word
+    :return: the number of occurrences of this word
     """
-    # raise NotImplementedError('Implement me!')
-    return (list(map(hash, names)))
+
+    return sum(s.count(word) for s in sentences)
 
 """
 from typing import List
 
-def hash_names(names: List[str]) -> List[int]:
-    #Take list of strings and return list of hashes
-    return list(map(hash, names))
+
+def count_words(sentences: List[str], word: str) -> int:
+    #Useless docs
+    return sum(s.count(word) for s in sentences)
 """

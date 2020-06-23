@@ -69,8 +69,6 @@ import functools
 class Currency(ABC):
     """1 EUR = 2 USD = 100 RUB"""
 
-    # course_rub = 100
-
     def __init__(self, nominal_volume: int):
         self.nominal_volume = nominal_volume
 
@@ -188,9 +186,6 @@ print(
     f"Dollar.course(Rubble) ==> {Dollar.course(Rubble)}\n"
     f"Rubble.course(Euro)   ==> {Rubble.course(Euro)}\n"
 )
-# Euro.course(Rubble)   ==> 100.0 RUB for 1 EUR
-# Dollar.course(Rubble) ==> 50.0 RUB for 1 USD
-# Rubble.course(Euro)   ==> 0.01 EUR for 1 RUB
 
 e = Euro(100)
 r = Rubble(100)
@@ -198,62 +193,42 @@ d = Dollar(200)
 
 print(
     f"e = {e}\n"
-    f"e.to(Dollar) = {e.to(Dollar)}\n"
-    f"e.to(Rubble) = {e.to(Rubble)}\n"
-    f"e.to(Euro)   = {e.to(Euro)}\n"
+    f"e.to(Dollar) ==> {e.to(Dollar)}\n"
+    f"e.to(Rubble) ==> {e.to(Rubble)}\n"
+    f"e.to(Euro)   ==> {e.to(Euro)}\n"
 )
-# e = 100 EUR
-# e.to(Dollar) = 200.0 USD
-# e.to(Rubble) = 10000.0 RUB
-# e.to(Euro)   = 100.0 EUR
-
 print(
     f"r = {r}\n"
-    f"r.to(Dollar) = {r.to(Dollar)}\n"
-    f"r.to(Euro)   = {r.to(Euro)}\n"
-    f"r.to(Rubble) = {r.to(Rubble)}\n"
+    f"r.to(Dollar) ==> {r.to(Dollar)}\n"
+    f"r.to(Euro)   ==> {r.to(Euro)}\n"
+    f"r.to(Rubble) ==> {r.to(Rubble)}\n"
 )
-# r = 100 RUB
-# r.to(Dollar) = 2.0 USD
-# r.to(Euro)   = 1.0 EUR
-# r.to(Rubble) = 100.0 RUB
 
 print(
-    f"e > r   ==> {e > r}\n" 
-    f"e == d  ==> {e == d}\n"
+    f"e > r  ==> {e > r}\n"
+    f"e == d ==> {e == d}\n"
 )
-# e > r   ==> True
-# e == d  ==> True
 
 print(
-    f"e + r  =>  {e + r}\n" 
-    f"r + d  =>  {r + d}\n" 
+    f"e + r  =>  {e + r}\n"
+    f"r + d  =>  {r + d}\n"
     f"d + e  =>  {d + e}\n"
 )
-# e + r  =>  101.0 EUR
-# r + d  =>  10100.0 RUB
-# d + e  =>  400.0 USD
 
 print(sum([Euro(i) for i in range(5)]))
-# 10.0 EUR
 
-
-
-
-
-
-
+"""
 import functools
 
 @functools.total_ordering
 class Currency:
-    """
-    1 EUR = 2 USD = 100 RUB
-
-    1 EUR = 2 USD    ;  1 EUR = 100 RUB
-    1 USD = 0.5 EUR  ;  1 USD = 50 RUB
-    1 RUB = 0.02 USD ;  1 RUB = 0.01 EUR
-    """
+    
+    # 1 EUR = 2 USD = 100 RUB
+    # 
+    # 1 EUR = 2 USD    ;  1 EUR = 100 RUB
+    # 1 USD = 0.5 EUR  ;  1 USD = 50 RUB
+    # 1 RUB = 0.02 USD ;  1 RUB = 0.01 EUR
+    
 
     label = None
     usd_rate = None
@@ -304,3 +279,42 @@ class Dollar(Currency):
 class Rubble(Currency):
     label = "RUB"
     usd_rate = 0.02  # 1RUB == 0.02USD
+
+
+print(
+    f"Euro.course(Rubble)   ==> {Euro.course(Rubble)}\n"
+    f"Dollar.course(Rubble) ==> {Dollar.course(Rubble)}\n"
+    f"Rubble.course(Euro)   ==> {Rubble.course(Euro)}\n"
+)
+
+e = Euro(100)
+r = Rubble(100)
+d = Dollar(200)
+
+print(
+    f"e = {e}\n"
+    f"e.to(Dollar) ==> {e.to(Dollar)}\n"
+    f"e.to(Rubble) ==> {e.to(Rubble)}\n"
+    f"e.to(Euro)   ==> {e.to(Euro)}\n"
+)
+print(
+    f"r = {r}\n"
+    f"r.to(Dollar) ==> {r.to(Dollar)}\n"
+    f"r.to(Euro)   ==> {r.to(Euro)}\n"
+    f"r.to(Rubble) ==> {r.to(Rubble)}\n"
+)
+
+print(
+    f"e > r  ==> {e > r}\n"
+    f"e == d ==> {e == d}\n"
+)
+
+print(
+    f"e + r  =>  {e + r}\n"
+    f"r + d  =>  {r + d}\n"
+    f"d + e  =>  {d + e}\n"
+)
+
+print(sum([Euro(i) for i in range(5)]))
+
+"""

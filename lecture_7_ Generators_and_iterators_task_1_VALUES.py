@@ -1,61 +1,34 @@
 """
-Создайте свой аналог zip с точно таким же поведением и который тоже возвращает итератор.
-При реализации нельзя использовать zip, itertools или другие сторонние модули.
+Задание 1. Исключения
+Функция divide принимает строку, которая содержит два целых числа с пользовательского ввода, разделенные пробелами.
 
->>> list(zip(['A', 'B', 'C'], [1, 2, 3]))
-    [('A', 1), ('B', 2), ('C', 3)]
+Необходимо выполнить операцию деления (a / b) и вернуть результат или сообщение о возникшей ошибке.
 
->>> list(zip('!', ['A', 'B', 'C', 'D'], range(1, 3)))
-    [('!', 'A', 1)]
+Шаблон строки с сообщением об ошибке:
 
->>> list(zip('abcd', ['A', 'B', 'C', 'D'], range(0, 40)))
-    [('a', 'A', 0), ('b', 'B', 1), ('c', 'C', 2), ('d', 'D', 3)]
+Error code: {exception}
+`
 
-Используйте что сочтете нужным:
-Или класс
-class CustomZip:
-    pass
+Пример взаимодействия:
 
-list(CustomZip(['A', 'B', 'C'], [1, 2, 3], (22, 33, 44, 55, 66)))
-# [('A', 1, 22), ('B', 2, 33), ('C', 3, 44)]
+ 1 0
+Error code: division by zero
 
-Или функцию:
-def CustomZip():
-    pass
+ 9 $
+Error code: invalid literal for int() with base 10: '$'
 
-list(custom_zip(['A', 'B', 'C'], [1, 2, 3], (22, 33, 44, 55, 66)))
-# [('A', 1, 22), ('B', 2, 33), ('C', 3, 44)]
-
-Используйте имя класса/функции "CustomZip" в каждом случае для простоты тестирования.
+ 6 2
+3
 """
 
-class CustomZip:
-    pass
+def divide(user_input):
+    try:
+        a,b =[int(num) for num in user_input.split()]
+        return a/b
+    except Exception as e:
+        return f"Error code: {e}"
 
-# OR
 
-def CustomZip(x, y, z):
-    return [(x[i], y[i], z[i]) for i in range(min(len(x), len(y), len(z)))]
-
-
-list(CustomZip(['A', 'B', 'C'], [1, 2, 3], (22, 33, 44, 55, 66)))
-# >> [('A', 1, 22), ('B', 2, 33), ('C', 3, 44)]
-
-"""
-def CustomZip(*args):
-    iterators = [iter(it) for it in args]
+if __name__ == '__main__':
     while True:
-        values = []
-        for val in iterators:
-            try:
-                value = next(val)
-            except StopIteration:
-                return
-            values.append(value)
-        yield tuple(values)
-
-
-list(CustomZip(['A', 'B', 'C'], [1, 2, 3], (22, 33, 44, 55, 66)))
-# >> [('A', 1, 22), ('B', 2, 33), ('C', 3, 44)]
-
-"""
+        print(divide(input()))

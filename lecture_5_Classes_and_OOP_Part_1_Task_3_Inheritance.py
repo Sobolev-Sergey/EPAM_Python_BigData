@@ -1,50 +1,102 @@
 """
-В качестве практической работы попробуйте самостоятельно
- перегрузить оператор сложения.
+Создать класс "SchoolMember" который представляет любого человека в школе.
+Класс "Teacher" наследуется от "SchoolMember" .
+Класс "Student" наследуется от "SchoolMember".
 
-Для его перегрузки используется метод "__add__()".
-Он вызывается, когда объекты класса, имеющего данный метод,
- фигурируют в операции сложения, причем с левой стороны.
+Классы должны иметь одинаковый интерфейс с публичной функцией "show()".
 
-Это значит, что в выражении "a + b" у объекта "a" должен быть
- метод "__add__()".
-Объект "b" может быть чем угодно, но чаще всего он бывает объектом
- того же класса.
-(В нашем случае это будет строка "mississippi")
+Пример:
 
-Объект "b" будет автоматически передаваться в метод "__add__()"
- в качестве второго аргумента (первый – "self").
+>>> persons = [Teacher("Mr.Poopybutthole", 40, 3000), Student("Morty", 16, 75)]
 
-In:  Counter([1, 2, 3]) + "mississippi"
-Out: ["1 mississippi", "2 mississippi" , "3 mississippi"]
+(Created Teacher: Mr.Poopybutthole)
+(Created Student: Morty)
+
+>>> for person in persons:
+            person.show()
+
+Name: Mr.Poopybutthole, Age: 40, Salary: 3000
+Name: Morty, Age: 16, Grades: 75
 """
 
-from typing import List
+class SchoolMember:
+    """
+    Represents anyone at school.
+    """
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def show(self):
+        """
+        Shows information about the person
+        :return: String with column names: Name, Age.
+        """
+        return f"Name: {self.name}, Age: {self.age},"
 
 
-class Counter:
-    def __init__(self, values: List[int]):
-        self.values = values
+class Teacher(SchoolMember):
+    """
+    Represents teacher at school.
+    """
+    def __init__(self, name, age, salary):
+        super().__init__(name, age)
+        self.salary = salary
 
-    def __add__(self, string):
-        result = []
-        for i in self.values:
-            new_string = f"{i} {string}"
-            result.append(new_string)
-        return result
+    def show(self):
+        """
+        Shows information about the teacher
+        """
+        return f"{super().show()} Salary: {self.salary}"
 
 
-print(Counter([1, 2, 3]) + "mississippi")
+class Student(SchoolMember):
+    """
+    Represents student at school.
+    """
+    def __init__(self, name, age, grades):
+        super().__init__(name, age)
+        self.grades = grades
+
+    def show(self):
+        """
+        Shows information about the student
+        """
+        return f"{super().show()} Grades: {self.grades}"
+
+
+persons = [Teacher("Mr.Poopybutthole", 40, 3000), Student("Morty", 16, 75)]
+
+for person in persons:
+    print(person.show())
 
 """
-from typing import List
+class SchoolMember:
+    def __init__(self, name: str, age: int):
+        self.name = name
+        self.age = age
+        print(f"(Created {self.__class__.__name__}: {self.name})")
 
-class Counter:
-    def __init__(self, values: List[int]):
-        self.values = values
+class Teacher(SchoolMember):
+    def __init__(self, name: str, age: int, salary: int):
+        super().__init__(name=name, age=age)
+        self.salary = salary
 
-    def __add__(self, other: str):
-        return [f"{value} {other}" for value in self.values]
+    def show(self):
+        return f"Name: {self.name}, Age: {self.age}, Salary: {self.salary}"
 
-print(Counter([1, 2, 3]) + "mississippi")
+class Student(SchoolMember):
+    def __init__(self, name: str, age: int, grades):
+        super().__init__(name=name, age=age)
+        self.grades = grades
+
+    def show(self):
+        return f"Name: {self.name}, Age: {self.age}, Grades: {self.grades}"
+
+
+persons = [Teacher("Mr.Poopybutthole", 40, 3000), Student("Morty", 16, 75)]
+
+for person in persons:
+    print(person.show())
+
 """
