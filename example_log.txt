@@ -1,0 +1,4 @@
+[Info] 2020-06-17 17:17:52.850471: Start execution code.
+[Info] 2020-06-17 17:17:52.852471: Code execution time: 0.003001689910888672. Result execution: Successful.
+[Info] 2020-06-17 17:17:52.855470: Start execution code.
+[Info] 2020-06-17 17:17:52.857471: Code execution time: 0.0039997100830078125. Result execution: Error code: division by zero.
