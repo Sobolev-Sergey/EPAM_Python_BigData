@@ -20,6 +20,7 @@ vehicles = (
     Bus(brand_name="MAN", year_of_issue=2000, base_price=10_000_000, mileage=950_000),
 )
 
+
 for vehicle in vehicles:
     print(
         f"Vehicle type={vehicle.vehicle_type()}\n"
