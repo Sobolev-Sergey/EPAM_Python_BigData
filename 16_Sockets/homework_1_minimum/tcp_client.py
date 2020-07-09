@@ -6,16 +6,18 @@
 – Формат данных: текущее время, значение
 """
 
+import random
 import socket
+import time
+
+from datetime import datetime
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 sock.connect(("localhost", 9999))
 
 while True:
-    data = input()
-    # if data == "q":
-    #     break
+    data = f"[Info] {datetime.now()}: {random.random()}"
     sock.send(data.encode("utf-8"))
-    resp = sock.recv(1024)
-    print(resp.decode("utf-8"))
+    time.sleep(60)
+
 sock.close()
