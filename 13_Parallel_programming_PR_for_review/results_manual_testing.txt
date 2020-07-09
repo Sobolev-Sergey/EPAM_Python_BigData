@@ -1,0 +1,56 @@
+(venv) C:\Python\PythonCourses\EPAM\13_Parallel_programming>
+(venv) C:\Python\PythonCourses\EPAM\13_Parallel_programming>
+(venv) C:\Python\PythonCourses\EPAM\13_Parallel_programming>python download.py -h
+[Info] 2020-07-02 01:37:03.339952: Start execution program.
+usage: download.py [-h] [--dir DIRECTORY] [--threads THREADS] [--size SIZE]
+                   filename [filename ...]
+
+positional arguments:
+  filename           set URL list file
+
+optional arguments:
+  -h, --help         show this help message and exit
+  --dir DIRECTORY    set output directory
+  --threads THREADS  set number of threads
+  --size SIZE        set output image sizes
+
+Console utility for multithreaded file downloading, their subsequent
+processing and saving to the local file system. File processing consists
+in generating a preview of a given maximum size (while maintaining
+aspect ratio) and transcoding to JPEG format
+
+examples:
+  python download.py urllist.txt --dir=thumbnails/ --threads=4 --size=128x128
+
+(venv) C:\Python\PythonCourses\EPAM\13_Parallel_programming>
+(venv) C:\Python\PythonCourses\EPAM\13_Parallel_programming>
+(venv) C:\Python\PythonCourses\EPAM\13_Parallel_programming>python download.py INVALID.txt --dir=thumbnails/ --threads=4 --size=128x128
+[Info] 2020-07-02 01:37:14.289099: Start execution program.
+[Error] 2020-07-02 01:37:14.294099: Unable to read the file INVALID.txt. Reason: [Errno 2] No such file or directory: 'INVALID.txt'
+[Info] 2020-07-02 01:37:14.294099: Time execution program:  0.004999399185180664
+
+(venv) C:\Python\PythonCourses\EPAM\13_Parallel_programming>
+(venv) C:\Python\PythonCourses\EPAM\13_Parallel_programming>
+(venv) C:\Python\PythonCourses\EPAM\13_Parallel_programming>python download.py urllist.txt --dir=thumbnails/ --threads=4 --size=128x128
+[Info] 2020-07-02 01:37:23.612684: Start execution program.
+[Info] 2020-07-02 01:37:25.528932: File processing completed. A new file was created: 00000.jpeg
+[Info] 2020-07-02 01:37:26.193195: File processing completed. A new file was created: 00001.jpeg
+[Info] 2020-07-02 01:37:26.754907: File processing completed. A new file was created: 00002.jpeg
+[Info] 2020-07-02 01:37:27.292586: File processing completed. A new file was created: 00003.jpeg
+[Info] 2020-07-02 01:37:27.702771: File processing completed. A new file was created: 00004.jpeg
+[Info] 2020-07-02 01:37:28.285182: File processing completed. A new file was created: 00005.jpeg
+[Info] 2020-07-02 01:37:28.994981: File processing completed. A new file was created: 00006.jpeg
+[Info] 2020-07-02 01:37:29.516803: File processing completed. A new file was created: 00007.jpeg
+[Info] 2020-07-02 01:37:30.025884: File processing completed. A new file was created: 00008.jpeg
+[Info] 2020-07-02 01:37:30.473887: File processing completed. A new file was created: 00009.jpeg
+[Error] 2020-07-02 01:37:30.793576: Error download file from URL. Reason: HTTP Error 404: Not Found
+[Info] 2020-07-02 01:37:31.293731: File processing completed. A new file was created: 00010.jpeg
+[Info] 2020-07-02 01:37:31.922910: File processing completed. A new file was created: 00011.jpeg
+[Info] 2020-07-02 01:37:31.923911: Number of successful downloaded files: 12
+[Info] 2020-07-02 01:37:31.923911: Number of bytes downloaded: 3435339
+[Info] 2020-07-02 01:37:31.923911: Number of requests that failed: 1
+[Info] 2020-07-02 01:37:31.923911: Time execution program:  8.311227083206177
+
+(venv) C:\Python\PythonCourses\EPAM\13_Parallel_programming>
+(venv) C:\Python\PythonCourses\EPAM\13_Parallel_programming>
+(venv) C:\Python\PythonCourses\EPAM\13_Parallel_programming>

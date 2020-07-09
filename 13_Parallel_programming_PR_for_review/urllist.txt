@@ -1,0 +1,13 @@
+https://www.epam.com/content/dam/epam/news_events/press-releases/generic_imagery/Awards-2.jpg
+https://www.epam.com/content/dam/epam/case_studies/delivering-a-virtual-health-solution-in-eight-days-for-clover-health/delivering_a_virtual_health_solution_in_eight_days_for_clover_health_1200.jpg
+https://www.epam.com/content/dam/epam/designing-for-distance/designing_for_distance_homepage.jpg
+https://www.epam.com/content/dam/epam/blogs/cloud-to-the-rescue/cloud_to_the_rescue_818.jpg
+https://www.epam.com/content/dam/epam/brochures/learn-from-home-services-for-enterprises/learn_from_home_services_for_enterprises_1200.jpg
+https://www.epam.com/content/dam/epam/whitepapers/the-future-of-finance-and-accounting-function/the_future_of_finance_and_accounting_function_1200.jpg
+https://www.epam.com/content/dam/epam/blogs/patient-generated-heath-data-is-critical-for-the-future-of-healthcare/patient_generated_heath_data_is_critical_for_the_future_of_healthcare_1200.jpg
+https://www.epam.com/content/dam/epam/locations/offices/Office-Canada_305x314.jpg
+https://www.epam.com/content/dam/epam/locations/offices/Office-Mexico_305x314.jpg
+https://www.epam.com/content/dam/epam/locations/offices/Office-USA_305x314.jpg
+https://www.epam.com/content/dam/epam/locations/offices/invalid.jpg
+https://www.epam.com/content/dam/epam/news_events/press-releases/2020/the_epam_cloud_pipeline_released_in_the_microsoft_azure_marketplace_1200.jpg
+https://www.epam.com/content/dam/epam/blogs/digital-distancing-to-keep-your-network-safe/digital_distancing_to_keep_your_network_safe_1200.jpg
