@@ -1,0 +1,17 @@
+INFO:Main module:Informational message
+WARNING:Main module:Warning appeared
+ERROR:Main module:An error has happened!
+CRITICAL:Main module:Critical error. Time to self-termination
+INFO:Main module:Informational message
+WARNING:Main module:Warning appeared
+ERROR:Main module:An error has happened!
+CRITICAL:Main module:Critical error. Time to self-termination
+INFO:Main module:Informational message
+INFO:Main module:Informational message
+INFO:Main module:Informational message
+INFO:Main module:Informational message
+ERROR:ex:Error!
+Traceback (most recent call last):
+  File "C:/_EPAM/_Watson/some-code/logging_lesson/log_exception.py", line 7, in <module>
+    raise RuntimeError
+RuntimeError

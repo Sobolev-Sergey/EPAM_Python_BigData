@@ -1,0 +1,154 @@
+"2020.07.05 18:08:36" - root - INFO - **********   Start execution program   **********
+"2020.07.05 18:08:36" - root - INFO - Create parser
+"2020.07.05 18:08:36" - root - INFO - Parser created
+"2020.07.05 18:08:52" - root - INFO - **********   Start execution program   **********
+"2020.07.05 18:08:52" - root - INFO - Create parser
+"2020.07.05 18:08:52" - root - INFO - Parser created
+"2020.07.05 18:08:52" - root - INFO - Executing command 'ls' for path: . 
+"2020.07.05 18:08:52" - root - INFO - cli_args/
+"2020.07.05 18:08:52" - root - INFO - logging.conf
+"2020.07.05 18:08:52" - root - INFO - logging_lesson/
+"2020.07.05 18:08:52" - root - INFO - ls.py
+"2020.07.05 18:08:52" - root - INFO - README.md
+"2020.07.05 18:08:52" - root - INFO - some_logger.log
+"2020.07.05 18:09:12" - root - INFO - **********   Start execution program   **********
+"2020.07.05 18:09:12" - root - INFO - Create parser
+"2020.07.05 18:09:12" - root - INFO - Parser created
+"2020.07.05 18:09:12" - root - INFO - Executing command 'ls' for path: cli_args 
+"2020.07.05 18:09:12" - root - INFO - choices.py
+"2020.07.05 18:09:12" - root - INFO - cli_args.py
+"2020.07.05 18:09:12" - root - INFO - cli_args_with_argparse.py
+"2020.07.05 18:09:12" - root - INFO - just_a_file.txt
+"2020.07.05 18:09:12" - root - INFO - list_params.py
+"2020.07.05 18:09:12" - root - INFO - multiple_named_params.py
+"2020.07.05 18:09:12" - root - INFO - multiple_params.py
+"2020.07.05 18:09:12" - root - INFO - param_file.py
+"2020.07.05 18:09:12" - root - INFO - param_flag.py
+"2020.07.05 18:09:12" - root - INFO - param_types.py
+"2020.07.05 18:09:12" - root - INFO - prog_description.py
+"2020.07.05 18:10:04" - root - INFO - **********   Start execution program   **********
+"2020.07.05 18:10:04" - root - INFO - Create parser
+"2020.07.05 18:10:04" - root - INFO - Parser created
+"2020.07.05 18:10:04" - root - INFO - Executing command 'ls -a' for path: . 
+"2020.07.05 18:10:04" - root - INFO - ./
+"2020.07.05 18:10:04" - root - INFO - ../
+"2020.07.05 18:10:04" - root - INFO - cli_args/
+"2020.07.05 18:10:04" - root - INFO - logging.conf
+"2020.07.05 18:10:04" - root - INFO - logging_lesson/
+"2020.07.05 18:10:04" - root - INFO - ls.py
+"2020.07.05 18:10:04" - root - INFO - README.md
+"2020.07.05 18:10:04" - root - INFO - some_logger.log
+"2020.07.05 18:10:04" - root - INFO - ***********   End  execution program   **********
+"2020.07.05 18:10:14" - root - INFO - **********   Start execution program   **********
+"2020.07.05 18:10:14" - root - INFO - Create parser
+"2020.07.05 18:10:14" - root - INFO - Parser created
+"2020.07.05 18:10:14" - root - INFO - Executing command 'ls -a' for path: cli_args 
+"2020.07.05 18:10:14" - root - INFO - ./
+"2020.07.05 18:10:14" - root - INFO - ../
+"2020.07.05 18:10:14" - root - INFO - choices.py
+"2020.07.05 18:10:14" - root - INFO - cli_args.py
+"2020.07.05 18:10:14" - root - INFO - cli_args_with_argparse.py
+"2020.07.05 18:10:14" - root - INFO - just_a_file.txt
+"2020.07.05 18:10:14" - root - INFO - list_params.py
+"2020.07.05 18:10:14" - root - INFO - multiple_named_params.py
+"2020.07.05 18:10:14" - root - INFO - multiple_params.py
+"2020.07.05 18:10:14" - root - INFO - param_file.py
+"2020.07.05 18:10:14" - root - INFO - param_flag.py
+"2020.07.05 18:10:14" - root - INFO - param_types.py
+"2020.07.05 18:10:14" - root - INFO - prog_description.py
+"2020.07.05 18:10:14" - root - INFO - ***********   End  execution program   **********
+"2020.07.05 18:10:23" - root - INFO - **********   Start execution program   **********
+"2020.07.05 18:10:23" - root - INFO - Create parser
+"2020.07.05 18:10:23" - root - INFO - Parser created
+"2020.07.05 18:10:23" - root - INFO - Executing command 'ls -R' for path: . 
+"2020.07.05 18:10:23" - root - INFO - cli_args/
+"2020.07.05 18:10:23" - root - INFO - logging_lesson/
+"2020.07.05 18:10:23" - root - INFO - logging.conf
+"2020.07.05 18:10:23" - root - INFO - ls.py
+"2020.07.05 18:10:23" - root - INFO - README.md
+"2020.07.05 18:10:23" - root - INFO - some_logger.log
+"2020.07.05 18:10:23" - root - INFO - choices.py
+"2020.07.05 18:10:23" - root - INFO - cli_args.py
+"2020.07.05 18:10:23" - root - INFO - cli_args_with_argparse.py
+"2020.07.05 18:10:23" - root - INFO - just_a_file.txt
+"2020.07.05 18:10:23" - root - INFO - list_params.py
+"2020.07.05 18:10:23" - root - INFO - multiple_named_params.py
+"2020.07.05 18:10:23" - root - INFO - multiple_params.py
+"2020.07.05 18:10:23" - root - INFO - param_file.py
+"2020.07.05 18:10:23" - root - INFO - param_flag.py
+"2020.07.05 18:10:23" - root - INFO - param_types.py
+"2020.07.05 18:10:23" - root - INFO - prog_description.py
+"2020.07.05 18:10:23" - root - INFO - config.log
+"2020.07.05 18:10:23" - root - INFO - config2.log
+"2020.07.05 18:10:23" - root - INFO - dict_conf.py
+"2020.07.05 18:10:23" - root - INFO - logging.conf
+"2020.07.05 18:10:23" - root - INFO - log_exception.py
+"2020.07.05 18:10:23" - root - INFO - log_format.py
+"2020.07.05 18:10:23" - root - INFO - log_formatter_and_handler.py
+"2020.07.05 18:10:23" - root - INFO - runner.py
+"2020.07.05 18:10:23" - root - INFO - sample.log
+"2020.07.05 18:10:23" - root - INFO - some_logger.log
+"2020.07.05 18:10:23" - root - INFO - some_logger2.log
+"2020.07.05 18:10:23" - root - INFO - with_conf_file.py
+"2020.07.05 18:10:23" - root - INFO - with_file.py
+"2020.07.05 18:10:23" - root - INFO - ***********   End  execution program   **********
+"2020.07.05 18:10:31" - root - INFO - **********   Start execution program   **********
+"2020.07.05 18:10:31" - root - INFO - Create parser
+"2020.07.05 18:10:31" - root - INFO - Parser created
+"2020.07.05 18:10:31" - root - INFO - Executing command 'ls -R' for path: cli_args 
+"2020.07.05 18:10:31" - root - INFO - choices.py
+"2020.07.05 18:10:31" - root - INFO - cli_args.py
+"2020.07.05 18:10:31" - root - INFO - cli_args_with_argparse.py
+"2020.07.05 18:10:31" - root - INFO - just_a_file.txt
+"2020.07.05 18:10:31" - root - INFO - list_params.py
+"2020.07.05 18:10:31" - root - INFO - multiple_named_params.py
+"2020.07.05 18:10:31" - root - INFO - multiple_params.py
+"2020.07.05 18:10:31" - root - INFO - param_file.py
+"2020.07.05 18:10:31" - root - INFO - param_flag.py
+"2020.07.05 18:10:31" - root - INFO - param_types.py
+"2020.07.05 18:10:31" - root - INFO - prog_description.py
+"2020.07.05 18:10:31" - root - INFO - ***********   End  execution program   **********
+"2020.07.05 18:10:41" - root - INFO - **********   Start execution program   **********
+"2020.07.05 18:10:41" - root - INFO - Create parser
+"2020.07.05 18:10:41" - root - INFO - Parser created
+"2020.07.05 18:10:41" - root - INFO - Executing command 'ls -r' for path: cli_args 
+"2020.07.05 18:10:41" - root - INFO - prog_description.py
+"2020.07.05 18:10:41" - root - INFO - param_types.py
+"2020.07.05 18:10:41" - root - INFO - param_flag.py
+"2020.07.05 18:10:41" - root - INFO - param_file.py
+"2020.07.05 18:10:41" - root - INFO - multiple_params.py
+"2020.07.05 18:10:41" - root - INFO - multiple_named_params.py
+"2020.07.05 18:10:41" - root - INFO - list_params.py
+"2020.07.05 18:10:41" - root - INFO - just_a_file.txt
+"2020.07.05 18:10:41" - root - INFO - cli_args_with_argparse.py
+"2020.07.05 18:10:41" - root - INFO - cli_args.py
+"2020.07.05 18:10:41" - root - INFO - choices.py
+"2020.07.05 18:10:41" - root - INFO - ***********   End  execution program   **********
+"2020.07.05 18:10:49" - root - INFO - **********   Start execution program   **********
+"2020.07.05 18:10:49" - root - INFO - Create parser
+"2020.07.05 18:10:49" - root - INFO - Parser created
+"2020.07.05 18:10:49" - root - INFO - Executing command 'ls -r' for path: cli_args 
+"2020.07.05 18:10:49" - root - INFO - prog_description.py
+"2020.07.05 18:10:49" - root - INFO - param_types.py
+"2020.07.05 18:10:49" - root - INFO - param_flag.py
+"2020.07.05 18:10:49" - root - INFO - param_file.py
+"2020.07.05 18:10:49" - root - INFO - multiple_params.py
+"2020.07.05 18:10:49" - root - INFO - multiple_named_params.py
+"2020.07.05 18:10:49" - root - INFO - list_params.py
+"2020.07.05 18:10:49" - root - INFO - just_a_file.txt
+"2020.07.05 18:10:49" - root - INFO - cli_args_with_argparse.py
+"2020.07.05 18:10:49" - root - INFO - cli_args.py
+"2020.07.05 18:10:49" - root - INFO - choices.py
+"2020.07.05 18:10:49" - root - INFO - ***********   End  execution program   **********
+"2020.07.05 18:11:00" - root - INFO - **********   Start execution program   **********
+"2020.07.05 18:11:00" - root - INFO - Create parser
+"2020.07.05 18:11:00" - root - INFO - Parser created
+"2020.07.05 18:11:00" - root - INFO - Executing command 'ls -d' for path: cli_args 
+"2020.07.05 18:11:00" - root - INFO - cli_args/
+"2020.07.05 18:11:00" - root - INFO - ***********   End  execution program   **********
+"2020.07.05 18:11:10" - root - INFO - **********   Start execution program   **********
+"2020.07.05 18:11:10" - root - INFO - Create parser
+"2020.07.05 18:11:10" - root - INFO - Parser created
+"2020.07.05 18:11:10" - root - INFO - Executing command 'ls -d' for path: . 
+"2020.07.05 18:11:10" - root - INFO - ./
+"2020.07.05 18:11:10" - root - INFO - ***********   End  execution program   **********
