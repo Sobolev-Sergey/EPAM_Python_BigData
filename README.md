@@ -99,20 +99,20 @@ https://docs.python.org/3/library/logging.html
 https://python-scripts.com/logging-python
 https://tproger.ru/translations/python-logging/
 
-### #15 Sockets
+### #16 Sockets
 /Introduction to TCP/UDP, sockets/
 
-### Sockets for beginners
+Sockets for beginners
 
 https://docs.python.org/3.7/howto/sockets.html
 
 
-### #16 Regexp and text analysis
+### #17 Regexp and text analysis
 /Introduction to regular expressions in python/
 
 https://docs.python.org/3.7/howto/regex.html
 
-### #17 Web programming
+### #18 Web programming
 /Introduction to modern Web, HTTP and first Flask Application/
 
 Web architecture 101
@@ -120,4 +120,4 @@ High load architecture
 WSGI servers
 
 
-### #18 BigData
+### #19 BigData
