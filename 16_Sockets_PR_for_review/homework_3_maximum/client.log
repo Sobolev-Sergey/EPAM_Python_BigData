@@ -1,0 +1,24 @@
+INFO:Client :Start client: __main__
+INFO:Client :Connected to server: localhost:9999
+INFO:Client :Send data to server successfully
+INFO:Client :Sleep client during: 60 seconds
+INFO:Client :Send data to server successfully
+INFO:Client :Sleep client during: 60 seconds
+INFO:Client :Send data to server successfully
+INFO:Client :Sleep client during: 60 seconds
+INFO:Client :Send data to server successfully
+INFO:Client :Sleep client during: 60 seconds
+INFO:Client :Send data to server successfully
+INFO:Client :Sleep client during: 60 seconds
+INFO:Client :Send data to server successfully
+INFO:Client :Sleep client during: 60 seconds
+INFO:Client :Send data to server successfully
+INFO:Client :Sleep client during: 60 seconds
+INFO:Client :Send data to server successfully
+INFO:Client :Sleep client during: 60 seconds
+INFO:Client :Send data to server successfully
+INFO:Client :Sleep client during: 60 seconds
+INFO:Client :Send data to server successfully
+INFO:Client :Sleep client during: 60 seconds
+INFO:Client :Send data to server successfully
+INFO:Client :Sleep client during: 60 seconds
