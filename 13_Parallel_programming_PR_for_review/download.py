@@ -23,6 +23,7 @@ examples:
   python %(prog)s urllist.txt --dir=thumbnails/ --threads=4 --size=128x128
 """
 
+
 DEFAULT_DIRECTORY = "."
 DEFAULT_THREADS = 1
 DEFAULT_SIZE = "100x100"
@@ -99,6 +100,7 @@ def download_file(url):
             return response.read()
 
     except urllib.error.HTTPError as exception:
+
         global NUMBER_REQUEST_FAILED
         log_error(f"Error download file from URL. Reason: {exception} ")
         NUMBER_REQUEST_FAILED += 1
@@ -178,7 +180,6 @@ def counter_successful_download(func):
         result = func(*args, **kwargs)
         if result:
             NUMBER_SUCCESSFUL_DOWNLOAD += 1
-
         return result
 
     return wrapper
