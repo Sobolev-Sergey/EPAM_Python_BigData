@@ -1,0 +1,3 @@
+INFO:Client :Start client: __main__
+INFO:Client :Get top news from: http://localhost:5000//news/country/us for country: us
+INFO:Client :Get top news from: http://localhost:5000//news/sources/fox-news for a specific source: fox-news
