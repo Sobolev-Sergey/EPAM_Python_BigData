@@ -1,0 +1,6 @@
+{"datetime_now": "2020-07-10 11:27:59.426886", "count_cpu": 2, "ctx_switches": 257337169, "interrupts": 2820875034, "soft_interrupts": 0, "syscalls": 1707345326, "time_use_mouse": "1"}
+{"datetime_now": "2020-07-10 11:28:59.433354", "count_cpu": 2, "ctx_switches": 257604838, "interrupts": 2821039542, "soft_interrupts": 0, "syscalls": 1708238732, "time_use_mouse": "11"}
+{"datetime_now": "2020-07-10 11:29:59.442946", "count_cpu": 2, "ctx_switches": 257828500, "interrupts": 2821180767, "soft_interrupts": 0, "syscalls": 1708794126, "time_use_mouse": "0"}
+{"datetime_now": "2020-07-10 11:30:59.445332", "count_cpu": 2, "ctx_switches": 258088934, "interrupts": 2821343026, "soft_interrupts": 0, "syscalls": 1709680556, "time_use_mouse": "13"}
+{"datetime_now": "2020-07-10 11:31:59.447725", "count_cpu": 2, "ctx_switches": 258310696, "interrupts": 2821482942, "soft_interrupts": 0, "syscalls": 1710229189, "time_use_mouse": "0"}
+{"datetime_now": "2020-07-10 11:32:59.449897", "count_cpu": 2, "ctx_switches": 258577301, "interrupts": 2821650383, "soft_interrupts": 0, "syscalls": 1711156416, "time_use_mouse": "15"}

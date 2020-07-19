@@ -1,0 +1,24 @@
+INFO:Server localhost:Start server: localhost:9999
+INFO:Server localhost:Connected: ('127.0.0.1', 63863)
+INFO:Server localhost:Received data from: ('127.0.0.1', 63863)
+INFO:Server localhost:Write data from: ('127.0.0.1', 63863) to file: data_from_client.txt
+INFO:Server localhost:Received data from: ('127.0.0.1', 63863)
+INFO:Server localhost:Write data from: ('127.0.0.1', 63863) to file: data_from_client.txt
+INFO:Server localhost:Received data from: ('127.0.0.1', 63863)
+INFO:Server localhost:Write data from: ('127.0.0.1', 63863) to file: data_from_client.txt
+INFO:Server localhost:Received data from: ('127.0.0.1', 63863)
+INFO:Server localhost:Write data from: ('127.0.0.1', 63863) to file: data_from_client.txt
+INFO:Server localhost:Received data from: ('127.0.0.1', 63863)
+INFO:Server localhost:Write data from: ('127.0.0.1', 63863) to file: data_from_client.txt
+INFO:Server localhost:Received data from: ('127.0.0.1', 63863)
+INFO:Server localhost:Write data from: ('127.0.0.1', 63863) to file: data_from_client.txt
+INFO:Server localhost:Received data from: ('127.0.0.1', 63863)
+INFO:Server localhost:Write data from: ('127.0.0.1', 63863) to file: data_from_client.txt
+INFO:Server localhost:Received data from: ('127.0.0.1', 63863)
+INFO:Server localhost:Write data from: ('127.0.0.1', 63863) to file: data_from_client.txt
+INFO:Server localhost:Received data from: ('127.0.0.1', 63863)
+INFO:Server localhost:Write data from: ('127.0.0.1', 63863) to file: data_from_client.txt
+INFO:Server localhost:Received data from: ('127.0.0.1', 63863)
+INFO:Server localhost:Write data from: ('127.0.0.1', 63863) to file: data_from_client.txt
+INFO:Server localhost:Received data from: ('127.0.0.1', 63863)
+INFO:Server localhost:Write data from: ('127.0.0.1', 63863) to file: data_from_client.txt
