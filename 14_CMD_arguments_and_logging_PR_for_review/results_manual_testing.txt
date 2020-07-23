@@ -1,0 +1,172 @@
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>python ls.py -h
+usage: ls.py [-h] [-a A_ALL] [-R RECURSIVE] [-r REVERSE] [-d DIRECTORY] [path]
+
+The ls command is used in the Linux shell to display directory contents and
+file information.
+
+positional arguments:
+  path                  path to the FILEs (the current directory by default)
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -a A_ALL, --all A_ALL
+                        include files with a name starting with a dot in the
+                        list (show hidden files)
+  -R RECURSIVE, --recursive RECURSIVE
+                        list subdirectories recursively
+  -r REVERSE, --reverse REVERSE
+                        reverse order while sorting
+  -d DIRECTORY, --directory DIRECTORY
+                        list directories themselves, not their contents
+
+List information about the FILEs (the current directory by default). examples:
+python ls.py python ls.py name_directory python ls.py -a name_directory python
+ls.py --all name_directory python ls.py -R name_directory python ls.py
+--recursive name_directory python ls.py -r name_directory python ls.py
+--reverse name_directory python ls.py -d name_directory python ls.py
+--directory name_directory
+
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>python ls.py
+cli_args/
+logging.conf
+logging_lesson/
+ls.py
+README.md
+some_logger.log
+
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>python ls.py cli_args
+choices.py
+cli_args.py
+cli_args_with_argparse.py
+just_a_file.txt
+list_params.py
+multiple_named_params.py
+multiple_params.py
+param_file.py
+param_flag.py
+param_types.py
+prog_description.py
+
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>python ls.py -a .
+./
+../
+cli_args/
+logging.conf
+logging_lesson/
+ls.py
+README.md
+some_logger.log
+
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>python ls.py -a cli_args
+./
+../
+choices.py
+cli_args.py
+cli_args_with_argparse.py
+just_a_file.txt
+list_params.py
+multiple_named_params.py
+multiple_params.py
+param_file.py
+param_flag.py
+param_types.py
+prog_description.py
+
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>python ls.py -R .
+cli_args/
+logging_lesson/
+logging.conf
+ls.py
+README.md
+some_logger.log
+choices.py
+cli_args.py
+cli_args_with_argparse.py
+just_a_file.txt
+list_params.py
+multiple_named_params.py
+multiple_params.py
+param_file.py
+param_flag.py
+param_types.py
+prog_description.py
+config.log
+config2.log
+dict_conf.py
+logging.conf
+log_exception.py
+log_format.py
+log_formatter_and_handler.py
+runner.py
+sample.log
+some_logger.log
+some_logger2.log
+with_conf_file.py
+with_file.py
+
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>python ls.py -R cli_args
+choices.py
+cli_args.py
+cli_args_with_argparse.py
+just_a_file.txt
+list_params.py
+multiple_named_params.py
+multiple_params.py
+param_file.py
+param_flag.py
+param_types.py
+prog_description.py
+
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>python ls.py -r cli_args
+prog_description.py
+param_types.py
+param_flag.py
+param_file.py
+multiple_params.py
+multiple_named_params.py
+list_params.py
+just_a_file.txt
+cli_args_with_argparse.py
+cli_args.py
+choices.py
+
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>python ls.py -r cli_args
+prog_description.py
+param_types.py
+param_flag.py
+param_file.py
+multiple_params.py
+multiple_named_params.py
+list_params.py
+just_a_file.txt
+cli_args_with_argparse.py
+cli_args.py
+choices.py
+
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>python ls.py -d cli_args
+cli_args/
+
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>python ls.py -d .
+./
+
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
+(venv) C:\Python\PythonCourses\EPAM\14_CMD_arguments_and_logging>
